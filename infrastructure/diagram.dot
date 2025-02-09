@@ -47,7 +47,7 @@ digraph "Diagram" {
       "GraphqlFullStackStack/posts-table" [
         label = " posts-table",
         fontsize = 12,
-        image = "/home/danidan/vscode/iac/cdk/stacks/personal/graphql-full-stack/node_modules/cdk-dia/icons/aws/Service/Arch_Database/64/Arch_Amazon-DynamoDB_64@5x.png",
+        image = "/home/danidan/vscode/iac/cdk/stacks/personal/graphql-full-stack/infrastructure/node_modules/cdk-dia/icons/aws/Service/Arch_Database/64/Arch_Amazon-DynamoDB_64@5x.png",
         imagescale = "true",
         imagepos = "tc",
         penwidth = "0",
