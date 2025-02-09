@@ -1,0 +1,99 @@
+digraph "Diagram" {
+  splines = "ortho";
+  pad = "1.0";
+  nodesep = "0.60";
+  ranksep = "0.75";
+  fontname = "Sans-Serif";
+  fontsize = "15";
+  dpi = "200";
+  rankdir = "BT";
+  compound = "true";
+  fontcolor = "#222222";
+  edge [
+    color = "#D5871488",
+    penwidth = 2,
+    arrowhead = "dot",
+    arrowtail = "dot",
+  ];
+  node [
+    shape = "box",
+    style = "rounded",
+    fixedsize = true,
+    width = 1.7,
+    height = 1.7,
+    labelloc = "c",
+    imagescale = true,
+    fontname = "Sans-Serif",
+    fontsize = 8,
+    margin = 8,
+  ];
+  subgraph "GraphqlFullStackStack" {
+    subgraph "cluster-SubGraph.GraphqlFullStackStack" {
+      graph [
+        label = "GraphqlFullStackStack",
+        labelloc = "b",
+        labeljust = "l",
+        margin = "10",
+        fontsize = "16",
+        penwidth = "2",
+        pencolor = "#888888",
+        style = "filled,rounded",
+        fillcolor = "#e4e4e4",
+      ];
+      "GraphqlFullStackStack/apis-post" [
+        label = " apis-post",
+        fontsize = 12,
+      ];
+      "GraphqlFullStackStack/posts-table" [
+        label = " posts-table",
+        fontsize = 12,
+        image = "/home/danidan/vscode/iac/cdk/stacks/personal/graphql-full-stack/node_modules/cdk-dia/icons/aws/Service/Arch_Database/64/Arch_Amazon-DynamoDB_64@5x.png",
+        imagescale = "true",
+        imagepos = "tc",
+        penwidth = "0",
+        shape = "node",
+        fixedsize = "true",
+        labelloc = "b",
+        width = 1.2,
+        height = 1.466,
+      ];
+      "GraphqlFullStackStack/func-get-post" [
+        label = " func-get-post",
+        fontsize = 12,
+      ];
+      "GraphqlFullStackStack/func-create-post" [
+        label = " func-create-post",
+        fontsize = 12,
+      ];
+      "GraphqlFullStackStack/resolver-get-post" [
+        label = " resolver-get-post",
+        fontsize = 12,
+      ];
+      "GraphqlFullStackStack/resolver-create-post" [
+        label = " resolver-create-post",
+        fontsize = 12,
+      ];
+    }
+  }
+  "GraphqlFullStackStack/apis-post" -> "GraphqlFullStackStack/posts-table" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/func-get-post" -> "GraphqlFullStackStack/apis-post" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/func-create-post" -> "GraphqlFullStackStack/apis-post" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/resolver-get-post" -> "GraphqlFullStackStack/apis-post" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/resolver-get-post" -> "GraphqlFullStackStack/func-get-post" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/resolver-create-post" -> "GraphqlFullStackStack/apis-post" [
+    dir = "both",
+  ];
+  "GraphqlFullStackStack/resolver-create-post" -> "GraphqlFullStackStack/func-create-post" [
+    dir = "both",
+  ];
+}
