@@ -98,13 +98,5 @@ export class GraphqlFullStackStack extends cdk.Stack {
       runtime: appsync.FunctionRuntime.JS_1_0_0,
       pipelineConfig: [funcCreatePost],
     });
-
-    new cdk.CfnOutput(this, "GraphQLAPIURL", {
-      value: api.graphqlUrl,
-    });
-
-    new cdk.CfnOutput(this, "GraphQLAPIKey", {
-      value: api.apiKey || "",
-    });
   }
 }
