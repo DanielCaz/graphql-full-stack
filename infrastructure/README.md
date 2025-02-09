@@ -8,4 +8,4 @@ This directory contains the AWS CDK infrastructure code for deploying the GraphQ
 
 ## Documentation
 
-(AWS Documentation)[https://docs.aws.amazon.com/appsync/latest/devguide/building-a-client-app.html]
+[AWS Documentation](https://docs.aws.amazon.com/appsync/latest/devguide/building-a-client-app.html)

@@ -36,7 +36,7 @@ The application uses:
 
 ## Getting Started
 
-Please refer to (AWS Documentation)[https://docs.aws.amazon.com/appsync/latest/devguide/building-a-client-app.html] for up-to-date instructions on how to create an AppSync API and download the `aws-exports.js` file.
+Please refer to [AWS Documentation](https://docs.aws.amazon.com/appsync/latest/devguide/building-a-client-app.html) for up-to-date instructions on how to create an AppSync API and download the `aws-exports.js` file.
 
 1. Clone the repository
 
